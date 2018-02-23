@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="movie_detail">Movie Detail</string>
+
+    <!-- Menu Main Activity -->
+    <string name="activity_menu_main_sort_by_popular">Sort by most popular</string>
+    <string name="activity_menu_main_sort_by_rated">Sort by top rated</string>
+
+    <!-- Movie Detail Activtiy -->
+    <string name="movie_detail_vote_avg">Vote avg</string>
+    <string name="movie_detail_release">Release Date</string>
+</resources>

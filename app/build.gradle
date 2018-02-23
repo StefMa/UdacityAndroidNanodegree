@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "guru.stefma.popularmovies"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        // Inject the API_KEY to the buildConfig.
+        // The API_KEY can be added via gradle properties and should be named 'theMovieDbApiKey'
+        // See https://docs.gradle.org/current/userguide/build_environment.html#sec:gradle_configuration_properties
+        buildConfigField "String", "THEMOVIEDBAPIKEY", "\"$theMovieDbApiKey\""
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // Android support
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // Network and Rx
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-moshi:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    // MVP
+    implementation 'net.grandcentrix.thirtyinch:thirtyinch:0.8.5'
+    implementation 'net.grandcentrix.thirtyinch:thirtyinch-rx2:0.8.5'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    // DI
+    implementation 'com.github.stephanenicolas.toothpick:toothpick-runtime:1.1.1'
+    implementation 'com.github.stephanenicolas.toothpick:smoothie:1.1.1'
+    annotationProcessor 'com.github.stephanenicolas.toothpick:toothpick-compiler:1.1.1'
+
+    // Logging
+    implementation 'com.jakewharton.timber:timber:4.6.1'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.15.0'
+    testImplementation 'org.assertj:assertj-core:3.9.0'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test:rules:1.0.1'
+    androidTestImplementation 'junit:junit:4.12'
+    androidTestImplementation 'org.mockito:mockito-core:2.15.0'
+    androidTestImplementation 'org.assertj:assertj-core:2.9.0'
+}

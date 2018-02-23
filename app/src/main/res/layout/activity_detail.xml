@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/activity_detail_image"
+                android:layout_width="170dp"
+                android:layout_height="260dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/activity_detail_vote_avg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/movie_detail_image_text_horizontal"
+                android:text="@string/movie_detail_vote_avg"
+                app:layout_constraintStart_toEndOf="@id/activity_detail_image"
+                app:layout_constraintTop_toTopOf="@id/activity_detail_image" />
+
+            <TextView
+                android:id="@+id/activity_detail_vote_avg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/activity_detail_vote_avg_title"
+                app:layout_constraintTop_toBottomOf="@id/activity_detail_vote_avg_title"
+                tools:text="8.1/10" />
+
+            <TextView
+                android:id="@+id/activity_detail_release_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/movie_detail_info_text_vertical"
+                android:text="@string/movie_detail_release"
+                app:layout_constraintStart_toStartOf="@id/activity_detail_vote_avg"
+                app:layout_constraintTop_toBottomOf="@id/activity_detail_vote_avg" />
+
+            <TextView
+                android:id="@+id/activity_detail_release"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/activity_detail_release_title"
+                app:layout_constraintTop_toBottomOf="@id/activity_detail_release_title"
+                tools:text="2015" />
+
+            <TextView
+                android:id="@+id/activity_detail_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingBottom="16dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_detail_image"
+                tools:text="@tools:sample/lorem/random" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
