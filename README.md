@@ -13,6 +13,22 @@ git checkout --orphan new-branch-name
 
 All projects should be linked in the table below 👇
 
+## Rules
+To provide some consistency I have some rules which should* be applied for **all** projects:
+
+Each project:
+* has a README which quickly explain what it is and what was todo
+* has only one single commit with the message `Init commit`
+* has a compile & targetSdkVersion of `27`
+* has a minSdkVersion of `21`
+* has at least the following dependencies: [`appcompat-v7`, `constraint-layout`](https://developer.android.com/topic/libraries/support-library/setup.html)
+* has at least the following test-dependencies: [`junit`](https://mvnrepository.com/artifact/junit/junit/), [`mockito-core`](https://mvnrepository.com/artifact/org.mockito/mockito-core), [`assertj-core`](https://mvnrepository.com/artifact/org.assertj/assertj-core)
+* has at least the follwoing android-test-dependencies: [`runner`, `rule`](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html)
+
+> *Not all projects will strictly follow these rules. Bust most of them!
+
+After a project is finished and submitted it has to be added to the projects table below.
+
 ## Projects
 
 | Name | Branch | Description | Task |
