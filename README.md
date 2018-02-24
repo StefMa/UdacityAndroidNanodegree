@@ -21,9 +21,9 @@ Each project:
 * has only one single commit with the message `Init commit`
 * has a compile & targetSdkVersion of `27`
 * has a minSdkVersion of `21`
-* has at least the following dependencies: [`appcompat-v7`, `constraint-layout`](https://developer.android.com/topic/libraries/support-library/setup.html)
+* has at least the following dependencies: [`appcompat-v7`, `constraint-layout`](https://developer.android.com/topic/libraries/support-library/setup.html), [`recyclerview`](https://developer.android.com/guide/topics/ui/layout/recyclerview.html)
 * has at least the following test-dependencies: [`junit`](https://mvnrepository.com/artifact/junit/junit/), [`mockito-core`](https://mvnrepository.com/artifact/org.mockito/mockito-core), [`assertj-core`](https://mvnrepository.com/artifact/org.assertj/assertj-core)
-* has at least the follwoing android-test-dependencies: [`runner`, `rule`](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html)
+* has at least the follwoing android-test-dependencies: [`runner`, `rule`](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html) (as well as the test-dependencies of course)
 
 > *Not all projects will strictly follow these rules. Bust most of them!
 
