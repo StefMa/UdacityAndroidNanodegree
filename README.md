@@ -11,7 +11,7 @@ git checkout --orphan new-branch-name
 ```
 > Branch names should be in named with dashes!
 
-All projects should be linked in the table below 👇
+All projects should are linked in the [table below](#projects) 👇
 
 ## Rules
 To provide some consistency I have some rules which should* be applied for **all** projects.
@@ -28,11 +28,22 @@ Each project has:
 
 > *Not all projects will strictly follow these rules. Bust most of them!
 
-After a project is finished and submitted it has to be added to the projects table below.
+## Submit and Binary
+After a project is finished it has to be submitted to a review in the Nanodegree.
+This could be done via open GitHub repository or as a *.zip file.
+
+Even if I have **this** repository to track all of my projects I do prefer to upload a *.zip.
+To make sure that each project can be upload as a *.zip it should be [cleaned](https://docs.google.com/document/d/1eYvuXY7GRE6VQpq4Rp-KotU1ti-JEySN1KdyKwjhzEQ/pub?embedded=true) first.
+
+After I uploaded the *.zip I have to add the **same** file into **this** repo to the [**submitted_binaries** branch](https://github.com/StefMa/UdacityAndroidNanodegree/tree/submitted_binaries).
+For that I have to create a new directory with the same name as the branch name and put the file in it.
+
+It is possible that my code got rejected and should be changed.
+If that will happen I don't override the file but add a new one named like the original plus the prefix `_reviewX` (while X stands for a number).
 
 ## Projects
 
-| Name | Branch | Description | Task |
-|-|-|-|-|
-| Sandwich Club | [sandwich-club-starter-code](https://github.com/StefMa/UdacityAndroidNanodegree/tree/sandwich-club-starter-code) | See Sandwiches in a list and open their details. | Fix JSON Reader (without a lib) and fix Detail View |
-| | | | |
+| Name | Branch | Binary | Description | Task |
+|-|-|-|-|-|
+| Sandwich Club | [sandwich-club-starter-code](https://github.com/StefMa/UdacityAndroidNanodegree/tree/sandwich-club-starter-code) | [Binary](https://github.com/StefMa/UdacityAndroidNanodegree/tree/submitted_binaries/sandwich-club-starter-code) |See Sandwiches in a list and open their details. | Fix JSON Reader (without a lib) and fix Detail View |
+| | | | | |
