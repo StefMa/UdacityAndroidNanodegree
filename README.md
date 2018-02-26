@@ -14,16 +14,17 @@ git checkout --orphan new-branch-name
 All projects should be linked in the table below 👇
 
 ## Rules
-To provide some consistency I have some rules which should* be applied for **all** projects:
+To provide some consistency I have some rules which should* be applied for **all** projects.
 
-Each project:
-* has a README which quickly explain what it is and what was todo
-* has only one single commit with the message `Init commit`
-* has a compile & targetSdkVersion of `27`
-* has a minSdkVersion of `21`
-* has at least the following dependencies: [`appcompat-v7`, `constraint-layout`](https://developer.android.com/topic/libraries/support-library/setup.html), [`recyclerview`](https://developer.android.com/guide/topics/ui/layout/recyclerview.html)
-* has at least the following test-dependencies: [`junit`](https://mvnrepository.com/artifact/junit/junit/), [`mockito-core`](https://mvnrepository.com/artifact/org.mockito/mockito-core), [`assertj-core`](https://mvnrepository.com/artifact/org.assertj/assertj-core)
-* has at least the follwoing android-test-dependencies: [`runner`, `rule`](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html) (as well as the test-dependencies of course)
+Each project has:
+* a README which quickly explain what it is and what was todo
+* only one single commit with the message `Init commit`
+* a compile & targetSdkVersion of `27`
+* a minSdkVersion of `21`
+* a Gradle version of `4.5.1`
+* at least the following dependencies: [`appcompat-v7`, `constraint-layout`](https://developer.android.com/topic/libraries/support-library/setup.html), [`recyclerview`](https://developer.android.com/guide/topics/ui/layout/recyclerview.html)
+* at least the following test-dependencies: [`junit`](https://mvnrepository.com/artifact/junit/junit/), [`mockito-core`](https://mvnrepository.com/artifact/org.mockito/mockito-core), [`assertj-core`](https://mvnrepository.com/artifact/org.assertj/assertj-core)
+* at least the following android-test-dependencies: [`runner`, `rule`](https://developer.android.com/training/testing/unit-testing/instrumented-unit-tests.html) (as well as the test-dependencies of course)
 
 > *Not all projects will strictly follow these rules. Bust most of them!
 
