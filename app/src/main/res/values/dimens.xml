@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movie_detail_image_text_horizontal">32dp</dimen>
+    <dimen name="movie_detail_info_text_vertical">16dp</dimen>
+    <dimen name="activity_detail_review_space_height">16dp</dimen>
+</resources>

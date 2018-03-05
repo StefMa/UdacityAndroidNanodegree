@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="movie_detail">Movie Detail</string>
+
+    <!-- Menu Main Activity -->
+    <string name="activity_menu_main_sort_by_popular">Sort by most popular</string>
+    <string name="activity_menu_main_sort_by_rated">Sort by top rated</string>
+    <string name="activity_menu_main_sort_by_favorite">Sort by favorites</string>
+    <!-- Movie Detail Activity -->
+    <string name="movie_detail_vote_avg">Vote avg</string>
+    <string name="movie_detail_release">Release Date</string>
+    <!-- Movie Detail Activity Tabs -->
+    <string name="activity_details_tab_info">Info</string>
+    <string name="activity_details_tab_video">Videos</string>
+    <string name="activity_details_tab_review">Reviews</string>
+    <!-- Move Detail Review Tab -->
+    <string name="item_review_list_read_more">Read more</string>
+    <!-- Menu Movie Detail -->
+    <string name="activity_menu_detail_favorite">Favorite</string>
+    <string name="activity_menu_detail_unfavorite">Unfavorite</string>
+</resources>
