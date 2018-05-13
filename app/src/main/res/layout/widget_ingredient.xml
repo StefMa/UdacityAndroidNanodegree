@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_widget_ingredient"
+    android:padding="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/widget_ingredient_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        tools:text="unsalted butter: 0.5 CUP\nsugar: 0.5 CUP\nsalt: 1.5 TSP" />
+
+</RelativeLayout>

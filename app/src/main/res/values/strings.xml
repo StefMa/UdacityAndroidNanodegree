@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Baking</string>
+    <string name="ingredient_widget_title">%s ingredients:</string>
+</resources>
