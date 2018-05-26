@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation 'com.squareup.moshi:moshi:1.6.0'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation "org.assertj:assertj-core:3.10.0"
+}
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
