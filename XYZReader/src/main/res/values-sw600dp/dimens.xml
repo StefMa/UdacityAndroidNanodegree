@@ -1,0 +1,20 @@
+<resources>
+    <!-- list -->
+    <dimen name="toolbar_list_height">112dp</dimen>
+    <dimen name="toolbar_list_image_bottom_margin">16dp</dimen>
+
+    <!-- detail -->
+    <dimen name="detail_photo_height">720dp</dimen>
+    <dimen name="detail_card_top_margin">384dp</dimen>
+    <dimen name="detail_inner_horiz_margin">64dp</dimen>
+    <dimen name="detail_metabar_vert_padding">32dp</dimen>
+    <dimen name="detail_metabar_title_bottom_padding">8dp</dimen>
+    <dimen name="detail_body_bottom_margin">96dp</dimen>
+
+    <dimen name="detail_scrollview_margin">80dp</dimen>
+    <dimen name="detail_scrollview_padding">640dp</dimen> <!-- detail_photo_height - detail_scrollview_margin -->
+
+    <dimen name="detail_title_text_size">42sp</dimen>
+    <dimen name="detail_body_text_size">20sp</dimen>
+    <dimen name="fab_margin">24dp</dimen>
+</resources>
