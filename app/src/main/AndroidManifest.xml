@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="guru.stefma.choicm">
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".presentation.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.account.AccountActivity"
+            android:label="@string/generic_account"
+            android:parentActivityName=".presentation.main.MainActivity" />
+        <activity
+            android:name=".presentation.account.signin.SignInActivity"
+            android:label="@string/generic_login"
+            android:parentActivityName=".presentation.main.MainActivity" />
+        <activity
+            android:name=".presentation.account.signup.SignUpActivity"
+            android:label="@string/generic_register"
+            android:parentActivityName=".presentation.account.signin.SignInActivity" />
+        <activity
+            android:name=".presentation.question.add.AddQuestionActivity"
+            android:parentActivityName=".presentation.main.MainActivity" />
+        <activity
+            android:name=".presentation.question.show.ShowQuestionActivity"
+            android:parentActivityName=".presentation.main.MainActivity" />
+
+        <receiver
+            android:name=".presentation.widget.RandomQuestionWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/random_question_widget_info" />
+        </receiver>
+        <service
+            android:name=".presentation.widget.LoadRandomQuestionsForWidgetIntentService"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+import guru.stefma.choicm.build.AndroidConfig
+import guru.stefma.choicm.build.Dependencies
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion AndroidConfig.COMPILE_SDK
+    defaultConfig {
+        minSdkVersion AndroidConfig.MIN_SDK
+        targetSdkVersion AndroidConfig.TARGET_SDK
+        versionCode AndroidConfig.Modules.VERSION_CODE
+        versionName AndroidConfig.Modules.VERSION_NAME
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation("com.google.firebase:firebase-auth:16.0.2")
+    implementation(Dependencies.RxJava)
+
+    testImplementation("junit:junit:4.12")
+    testImplementation("org.mockito:mockito-core:2.19.1")
+    testImplementation("org.assertj:assertj-core:3.10.0")
+}

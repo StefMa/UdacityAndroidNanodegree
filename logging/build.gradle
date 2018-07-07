@@ -1,0 +1,24 @@
+import guru.stefma.choicm.build.AndroidConfig
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion AndroidConfig.COMPILE_SDK
+    defaultConfig {
+        minSdkVersion AndroidConfig.MIN_SDK
+        targetSdkVersion AndroidConfig.TARGET_SDK
+        versionCode AndroidConfig.Modules.VERSION_CODE
+        versionName AndroidConfig.Modules.VERSION_NAME
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api 'com.jakewharton.timber:timber:4.7.1'
+}

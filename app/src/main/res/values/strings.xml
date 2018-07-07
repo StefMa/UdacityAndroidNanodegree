@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Choicm</string>
+
+    <string name="activity_main_menu_account">Account</string>
+
+    <string name="activity_signin_dont_have_account">… don\'t have an Account yet?</string>
+
+    <string name="activity_account_welcome_user">Hello\n%s</string>
+    <string name="activity_account_get_error">Can\'t get your account</string>
+    <string name="activity_account_signout_error">Error while logout</string>
+
+    <string name="activity_add_question_add_answer">Add answer</string>
+    <string name="activity_add_question_hint">Question (How is your mood today?)</string>
+
+    <string name="singin_dialog_error_title">Login error</string>
+    <string name="singin_dialog_error_message">
+        There was an error while trying to login.\n
+        Please try again.
+    </string>
+
+    <string name="singup_dialog_error_title">Register error</string>
+    <string name="signup_dialog_error_message">
+        There was an error while trying to create your account.\n
+        Please try again.
+    </string>
+
+    <string name="widget_view">View</string>
+
+    <string name="generic_login">Login</string>
+    <string name="generic_signin">Sign in</string>
+    <string name="generic_username">Username</string>
+    <string name="generic_password">Password</string>
+    <string name="generic_register">Register</string>
+    <string name="generic_email">E-Mail Address</string>
+    <string name="generic_signup">Sign up</string>
+    <string name="generic_account">Account</string>
+    <string name="generic_logout">Logout</string>
+    <string name="generic_question">Question</string>
+</resources>
