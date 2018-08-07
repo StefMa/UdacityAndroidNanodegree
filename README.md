@@ -54,3 +54,7 @@ If that will happen I don't override the file but add a new one named like the o
 | Capstone Stage 1 | [capstone-stage-1](https://github.com/StefMa/UdacityAndroidNanodegree/tree/capstone-stage-1) | [Binary](https://github.com/StefMa/UdacityAndroidNanodegree/tree/submitted_binaries/capstone-stage-1) | Capstone Stage 1 | Prepare a project by filling out a PDF Template |
 | Capstone Stage 2 | [capstone-stage-2](https://github.com/StefMa/UdacityAndroidNanodegree/tree/capstone-stage-2) | [Binary](https://github.com/StefMa/UdacityAndroidNanodegree/tree/submitted_binaries/capstone-stage-2) | Capstone Stage 2 | Create the project what I've define in Stage 1 |
 | | | | | |
+
+## Certificate
+The certificate can be found [in this repo](AndroidDeveloperNanodegree.pdf) or 
+[here at udacity.com](https://confirm.udacity.com/WFPAESDL).
